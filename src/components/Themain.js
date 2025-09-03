@@ -228,9 +228,6 @@ export default function Themain() {
                             onChange={e => handleChange(e, element.slug)}
                             disabled={!element.isEditable}
                         />
-                        {/* {element.required && !formValues[element.slug] && (
-                            <p className="Redpara">please enter {element.label}</p>
-                        )} */}
                     </div>
                 )
             case 'tel':
@@ -248,9 +245,6 @@ export default function Themain() {
                             onChange={e => handleChange(e, element.slug)}
                             disabled={!element.isEditable}
                         />
-                        {/* {element.required && !formValues[element.slug] && (
-                            <p className="Redpara">please enter {element.label}</p>
-                        )} */}
                     </div>
                 )
             case 'email':
@@ -268,9 +262,6 @@ export default function Themain() {
                             value={formValues[element.slug] || ""}
                             onChange={e => handleChange(e, element.slug)}
                             disabled={!element.isEditable} />
-                        {/* {element.required && !formValues[element.slug] && (
-                            <p className="Redpara">please enter {element.label}</p>
-                        )} */}
                     </div>
                 )
             case 'password':
@@ -286,10 +277,8 @@ export default function Themain() {
                             required={element.required}
                             value={formValues[element.slug] || ""}
                             onChange={e => handleChange(e, element.slug)}
-                            disabled={!element.isEditable} />
-                        {/* {element.required && !formValues[element.slug] && (
-                            <p className="Redpara">please enter {element.label}</p>
-                        )} */}
+                            disabled={!element.isEditable} 
+                            />
                     </div>
                 )
             case 'select':
